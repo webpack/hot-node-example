@@ -1,0 +1,26 @@
+{
+  "name": "hot-node-example",
+  "version": "1.0.0",
+  "description": "Example for HMR in a node.js process",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf out && webpack",
+    "hot": "rm -rf out && webpack \"webpack/hot/poll?1000\" --watch --hot",
+    "start": "node out/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webpack/hot-node-example.git"
+  },
+  "author": "Tobias Koppers @sokra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webpack/hot-node-example/issues"
+  },
+  "homepage": "https://github.com/webpack/hot-node-example",
+  "dependencies": {
+    "node-libs-browser": "^0.5.0",
+    "webpack": "^1.9.7"
+  }
+}
